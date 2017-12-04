@@ -1,0 +1,64 @@
+.list {
+	list-style-type: none;
+}
+
+figure {
+	margin-bottom: 40px;
+	max-width: 90%;
+}
+
+h1 {
+	text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;	
+	transition: all .2s;
+}
+
+picture{
+	max-width: 90%;
+}
+
+.pics {
+	float: left;
+	display: block;
+	max-width: 90%;
+}
+
+li {
+	display: grid;
+	transition: transform 0.7s ease-in;
+}
+
+figure {
+	transition: transform 0.7s ease-in;	
+}
+
+img {
+	transition: transform 0.7s ease-in;	
+}
+
+img:hover {
+	transform: rotate(05deg);
+	z-index: 20;
+}
+
+@media only screen and (min-width: 600px){    
+    figure { 		
+		padding: 0;
+		margin: 0.5%;
+		float: left;
+		width: 45%;		
+    }
+}
+
+@media only screen and (min-width: 1201px){
+    figure {       
+		padding: 0;
+		margin: 0.5%;
+		float: left;
+		width: 23%;
+    }
+}

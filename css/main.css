@@ -21,6 +21,7 @@ img {
 
 picture{
 	max-width: 90%;
+	display: block;
 }
 
 .pics {
@@ -35,12 +36,14 @@ li {
 	float: left;
 }
 
+/*
 figure {
 	transition: transform 0.7s ease-in;	
 }
+*/
 
 img {
-	transition: transform 0.7s ease-in;	
+	transition: transform 0.3s ease-in;	
 }
 
 img:hover {
@@ -48,20 +51,22 @@ img:hover {
 	z-index: 20;
 }
 
-@media only screen and (min-width: 600px){    
-    figure { 		
+@media only screen and (min-width: 600px){
+	li {
 		padding: 0;
-		margin: 0.5%;
+		margin: 0;
+		width: 49%;
 		float: left;
-		width: 45%;		
-	}	
+	}
 }
 
 @media only screen and (min-width: 1201px){
-    figure {       
+	li {
 		padding: 0;
-		margin: 0.5%;
-		width: 23%;
-		
-    }	
+		margin: 0;
+		width: 25%;
+		float: left;
+	}
 }
+
+
